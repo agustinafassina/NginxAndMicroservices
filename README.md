@@ -21,10 +21,10 @@ docker container ps
 
 ## Microservices 
 ### Paths: http://localhost:6001
-- ApiOne: /api/v1/pets - GET
-- ApiTwo: api/v2/countries - GET
-- ApiThree: api/v3/ipa - GET
-- ApiFour: api/v4/random - GET
+- ApiOne.Dc: /api/v1/pets - GET
+- ApiTwo.Dc: api/v2/countries - GET
+- ApiThree.Dc: api/v3/ipa - GET
+- ApiFour.Dc: api/v4/random - GET
 
 ### Run the microservices separately by example:
 #### Api One
