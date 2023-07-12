@@ -29,24 +29,24 @@ docker container ps
 ### Run the microservices separately by example:
 #### Api One
 ```
-cd /ApiOne
+cd /ApiOne.Dc
 dotnet run
 ```
 
 #### Api Two
 ```
-cd /ApiTwo
+cd /ApiTwo.Dc
 dotnet run
 ```
 
 #### Api Three
 ```
-cd /ApiThree
+cd /ApiThree.Dc
 dotnet run
 ```
 
 #### Api Four
 ```
-cd /ApiFour
+cd /ApiFour.Dc
 dotnet run
 ```
