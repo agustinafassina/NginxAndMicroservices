@@ -12,25 +12,25 @@ services:
     restart: always
   one:
     container_name: one
-    build: ../ApiOne/
+    build: ../ApiOne.Dc/
     expose:
       - "80"
     restart: always
   two:
     container_name: two
-    build: ../ApiTwo/
+    build: ../ApiTwo.Dc/
     expose:
       - "80"
     restart: always
   three:
     container_name: three
-    build: ../ApiThree/
+    build: ../ApiThree.Dc/
     expose:
       - "80"
     restart: always
   four:
     container_name: four
-    build: ../ApiFour/
+    build: ../ApiFour.Dc/
     restart: always
     expose:
       - "80"
