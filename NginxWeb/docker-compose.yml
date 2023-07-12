@@ -1,0 +1,36 @@
+version: "3"
+
+services:
+  nginx:
+    container_name: nginx
+    build: ./
+    ports:
+      - "6001:6001" # APIOne
+      - "6002:6002" # ApiTwo
+      - "6003:6003" # ApiThree
+      - "6004:6004" # ApiFour
+    restart: always
+  one:
+    container_name: one
+    build: ../ApiOne/
+    expose:
+      - "80"
+    restart: always
+  two:
+    container_name: two
+    build: ../ApiTwo/
+    expose:
+      - "80"
+    restart: always
+  three:
+    container_name: three
+    build: ../ApiThree/
+    expose:
+      - "80"
+    restart: always
+  four:
+    container_name: four
+    build: ../ApiFour/
+    restart: always
+    expose:
+      - "80"

@@ -1,0 +1,7 @@
+.env
+.bin
+.obj
+/ApiJobOpportunityOne/.vscode
+/ApiJobOpportunityTwo/.vscode
+/ApiJobOpportunityThree/.vscode
+/ApiJobOpportunityFour/.vscode
