@@ -1,25 +1,52 @@
-# NginxAndMicroservices
+# Nginx and microservices
 Este repositorio tiene un docker compose que levanta un docker para un nginx y cuatro dockers con sus apis rest.
 ![Alt text](image.png)
 
-Local build 💻
+## Docker compose
+### Up 🚀
 Run command where is the docker-compose.yml file. In /NinxWeb
 
 ```
 docker-compose up -d
 ```
-Docker build
+### Build 🕒
 ```
 docker-compose up --build
 ```
 
-Docker status view:
+### Status view 🩺
 ```
 docker container ps
 ```
 
-Paths: http://localhost:6001/
+## Microservices 
+### Paths: http://localhost:6001
 - ApiOne: /api/v1/pets - GET
 - ApiTwo: api/v2/countries - GET
 - ApiThree: api/v3/ipa - GET
 - ApiFour: api/v4/random - GET
+
+### Run the microservices separately by example:
+#### Api One
+```
+cd /ApiOne
+dotnet run
+```
+
+#### Api Two
+```
+cd /ApiTwo
+dotnet run
+```
+
+#### Api Three
+```
+cd /ApiThree
+dotnet run
+```
+
+#### Api Four
+```
+cd /ApiFour
+dotnet run
+```
